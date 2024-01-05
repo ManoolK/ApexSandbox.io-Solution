@@ -1,4 +1,4 @@
 public String evenOrOdd(Integer num) {
     Integer remainder = Math.mod(num, 2);
-    return remainder > 0 ? 'odd' : 'even';
+    return remainder == 0 ? 'even' : 'odd';
 }
