@@ -1,0 +1,14 @@
+public Integer rockPaperScissors(String player1, String player2) {
+    // no one wins
+    if (player1.equalsIgnoreCase(player2)) return 0;
+
+    // Map winning pairs
+    Map<String, String> winPairs = new Map<String, String>{
+        'rock' => 'scissors',
+        'scissors' => 'paper',
+        'paper' => 'rock'
+    };
+
+    // Check if Player 1 has a winning position return 1. Otherwise, return 2.
+    return winPairs.get(player1.toLowerCase()) == player2.toLowerCase() ? 1 : 2; 
+}
