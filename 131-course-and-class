@@ -8,5 +8,5 @@ public void createCourseAndClass(String name, String description) {
     newClass.Name = name;
     newClass.apxio__Description__c = description.substring(0, 255);
     newClass.apxio__Course__c = cource.Id;
-    insert 
+    insert newClass;
 }
