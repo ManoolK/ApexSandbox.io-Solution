@@ -11,4 +11,4 @@ public Id classFromCourse(String courseName) {
         return newClass.Id;
     }
     return null;
-}
+} 
