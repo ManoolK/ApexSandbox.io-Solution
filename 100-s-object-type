@@ -1,0 +1,8 @@
+public Boolean isTypeAccount(sObject record)
+{
+    Schema.SObjectType accountType = Schema.Account.getSObjectType();
+    if (record.getSObjectType() == accountType) {
+        return true;
+    }
+    return false;
+}
